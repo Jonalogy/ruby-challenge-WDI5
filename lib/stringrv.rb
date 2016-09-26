@@ -8,14 +8,22 @@
 # em_esrever
 # ```
 
-number = "I love wanton"
+sample = "123456|"
 
-def reverse(apple)
-  number = number.split("")
-  collect =[]
+def reverse(string)
+  k = string.length - 1
+  unit = 1
+  for i in (0...k) do
+    string[k+unit] = string[k-(i+1)]
+    unit += 1
+    puts string
+  end #for
 
-  until i = (apple.length - 1) do
-    collect.unshift(number[i])
+  for i in (0..k) do
+    string[0] = ''
+    puts string
+  end #times
 
-  end
-end
+end #reverse{}
+
+reverse(sample)
